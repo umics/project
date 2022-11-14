@@ -1,0 +1,174 @@
+@media (max-width: 1200px)
+    .menu
+        &_item
+            padding-right: 20px
+        &_link
+            font-size: 13px
+    .promo
+        &_header
+            font-size: 50px 
+    .reasons
+        &_block
+            align-items: flex-start
+        &_desc
+            width: 300px
+
+@media (max-width: 991px)
+    .menu
+        &_item
+            padding-right: 8px
+        &_link
+            font-size: 10px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_official
+            font-size: 11px        
+        &_phone
+            font-size: 20px
+    .promo
+        &_header
+            font-size: 40px 
+        &_subheader
+            font-size: 30px 
+    .reasons
+        &_block
+            display: flex
+            flex-wrap: wrap       
+        &_round
+            margin-bottom: 20px 
+
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100% 
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0, 0, 0, .8)
+        transition: 0.6s all
+        &_item
+            padding-right: 0
+            border: none
+            margin: 10px
+        &_link    
+            font-size: 20px
+        &_active
+            left: 0
+    .subheader
+        &_logo
+            img
+                width: 100%
+
+    .choice
+        &_img 
+            width: 100%
+            /* margin: 56px auto 0 -130px    */
+          
+   
+    .mobile
+        &_item
+            width: 100%
+    
+
+    .humburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 30%
+        transform: translateY(50%)
+        width: 26px
+        height: 12px
+        
+
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background: #fff 
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span    
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: rotate(-45deg)  translateX(-10px)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: rotate(45deg) translateY(10px)
+    .xs-hidden
+        display: none
+   
+
+    .xs-visible
+        display: block
+    .subheader
+        &_phone
+            display: block
+            margin-top: 10px
+            color: #fff
+            font-size: 16px
+            font-weight: 400
+            text-transform: uppercase
+            text-align: center
+        &_btn
+            display: block
+            width: 200px
+            height: 40px
+            margin: 0 auto
+            margin-top: 10px
+    .promo
+        &_header
+            line-height: 45px
+
+@media (max-width: 575px)
+
+    .subheader
+        &_official
+            display: none
+        &_logo
+            margin-top: 27px                     
+    nav
+        height: 30px
+    header
+        height: 30px
+    .subheader
+        height: 60px
+        top: 28px
+        &_logo
+            margin-top: 15px
+        &_phone
+            font-weight: 400
+            font-size: 12px
+            text-transform: uppercase
+        &_btn
+            width: 110px
+            height: 22px
+            font-size: 10px
+    .promo
+        min-height: 400px
+        padding: 93px 0 35px 0
+        &_header
+            font-size: 35px 
+        &_subheader
+            font-size: 25px 
+        &_descr
+            display: none
+    footer
+        &_divider
+            
+        &_wrapper       
+            width: 322px
+            height: 2055px
+        
+        &_links_main
+            font-weight: 300px
+            font-size: 14px
+    .world 
+        width: 100%        
